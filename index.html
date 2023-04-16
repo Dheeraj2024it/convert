@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature converter</title>
+</head>
+
+<body>
+    <div class="bharat-inter">
+        <p class="logo-1">
+            <img src="fire.gif" alt="" width="60px" height="80px">
+        </p>
+    </div>
+    <div class="container">
+        <form id="calcTemp" onsubmit="calculateTemp(); return false">
+            <label for="temp" id="target">Enter the temperature to convert temperature form Celsius to Fahrenheit</label>
+            <br>
+            <p class="logo">
+                <img src="logo.avif" alt="" width="80px" height="80px">
+            </p>
+            <input type="number" name="temp" id="temp" value="0">
+            <select name="temp_diff" id="temp_diff">
+                <option value="cel">&#176;Celsius</option>
+                <option value="fah">&#176;Fahrenheit</option>
+            </select>
+            <br>
+            <input type="submit" name="temp" id="submit">
+            <br>
+            <span id="result"></span>
+        </form>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="copyright">
+                <span>Created By Dheeraj || All Right Reserved.</span>
+                <br>
+                <nav>
+                    <br>
+                    <a href="https://www.linkedin.com/in/dheeraj-pyasi-6a319a247/" target="_blank" rel="noopener noreferrer">
+                        <img src="linkedin.jpg" alt="" width="30px" height="30px">
+                    </a>
+                </nav>
+            </div>
+
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
